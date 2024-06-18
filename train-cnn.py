@@ -8,8 +8,7 @@ from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.utils import multi_gpu_model
 
 
-# The training code will be contained in a main gaurd (if __name__ == '__main__') so SageMaker will execute the code found in the main. 
-# argparse: 
+
 if __name__ == '__main__':
     
     # Parser to get the arguments

@@ -1,3 +1,13 @@
+
+::: {.cell .markdown}
+# NAME: SREENIVASAN S
+
+# REG NO: 21BEC0256
+
+## PROJECT TITLE: ADVANCED-TRAFFIC-SIGN-CLASSIFICATION-SYSTEM
+:::
+
+
 ---
 jupyter:
   instance_type: ml.t3.medium
@@ -19,19 +29,8 @@ jupyter:
   nbformat_minor: 4
 ---
 
-::: {.cell .markdown}
-# NAME: SREENIVASAN S
-
-# REG NO: 21BEC0256
-
-## PROJECT TITLE: ADVANCED-TRAFFIC-SIGN-CLASSIFICATION-SYSTEM
-:::
-
-::: {.cell .markdown}
 # TASK #1: UNDERSTAND THE PROBLEM STATEMENT
-:::
 
-::: {.cell .markdown}
 -   Our goal is to build a multiclassifier model based on deep learning
     to classify various traffic signs.
 
@@ -85,14 +84,10 @@ jupyter:
 
 -   **Data Source** -
     <https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign>
-:::
 
-::: {.cell .markdown}
 # TASK #2: GET THE DATA AND VISUALIZE IT
-:::
 
-::: {.cell .code execution_count="1"}
-``` python
+
 import pickle
 
 with open("train.p", mode='rb') as training_data:

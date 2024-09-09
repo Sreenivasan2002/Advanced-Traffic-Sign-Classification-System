@@ -28,7 +28,7 @@ jupyter:
 :::
 
 ::: {.cell .markdown}
-# TASK #1: UNDERSTAND THE PROBLEM STATEMENT
+# TASK #1: PROBLEM STATEMENT
 :::
 
 ::: {.cell .markdown}

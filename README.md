@@ -88,7 +88,7 @@ jupyter:
 :::
 
 ::: {.cell .markdown}
-# TASK #2: GET THE DATA AND VISUALIZE IT
+# TASK #2: DATA VISUALIZATION
 :::
 
 ::: {.cell .code execution_count="1"}

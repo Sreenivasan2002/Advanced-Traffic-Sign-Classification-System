@@ -112,51 +112,26 @@ plt.imshow(X_test[i])
 print('label = ', y_test[i])
 ```
 
-::: {.output .stream .stdout}
-    label =  41
-:::
 
-::: {.output .display_data}
-![](vertopal_945e9cd521f74c06ae4a4f5401532c16/55c4c819a7a0eacfe71c3bb137ea2dac3b888b2e.png)
-:::
-:::
 
-::: {.cell .code execution_count="3"}
+
 ``` python
 X_test.shape
 ```
 
-::: {.output .execute_result execution_count="3"}
-    (12630, 32, 32, 3)
-:::
-:::
-
-::: {.cell .code execution_count="5"}
 ``` python
 X_train.shape
 ```
 
-::: {.output .execute_result execution_count="5"}
-    (34799, 32, 32, 3)
-:::
-:::
-
-::: {.cell .code execution_count="7"}
 ``` python
 X_validation.shape
 ```
 
-::: {.output .execute_result execution_count="7"}
-    (4410, 32, 32, 3)
-:::
-:::
 
-::: {.cell .markdown}
+
 -   Printing 5 by 5 grid showing random traffic sign images along with
-    their corresponding labels as their titles
-:::
+    
 
-::: {.cell .code execution_count="11"}
 ``` python
 # Let's view more images in a grid format
 # Define the dimensions of the plot grid 

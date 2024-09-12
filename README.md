@@ -19,7 +19,7 @@ jupyter:
   nbformat_minor: 4
 ---
 
-::: {.cell .markdown}
+
 # NAME: SREENIVASAN S
 
 # REG NO: 21BEC0256

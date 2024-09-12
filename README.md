@@ -25,13 +25,9 @@ jupyter:
 # REG NO: 21BEC0256
 
 ## PROJECT TITLE: ADVANCED-TRAFFIC-SIGN-CLASSIFICATION-SYSTEM
-:::
 
-::: {.cell .markdown}
 # TASK #1: PROBLEM STATEMENT
-:::
 
-::: {.cell .markdown}
 -   Our goal is to build a multiclassifier model based on deep learning
     to classify various traffic signs.
 
@@ -87,11 +83,10 @@ jupyter:
     <https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign>
 :::
 
-::: {.cell .markdown}
-# TASK #2: DATA VISUALIZATION
-:::
 
-::: {.cell .code execution_count="1"}
+# TASK #2: DATA VISUALIZATION
+
+
 ``` python
 import pickle
 
@@ -102,17 +97,13 @@ with open("valid.p", mode='rb') as validation_data:
 with open("test.p", mode='rb') as testing_data:
     test = pickle.load(testing_data)
 ```
-:::
 
-::: {.cell .code execution_count="2"}
 ``` python
 X_train, y_train = train['features'], train['labels']
 X_validation, y_validation = valid['features'], valid['labels']
 X_test, y_test = test['features'], test['labels']
 ```
-:::
 
-::: {.cell .code execution_count="4" scrolled="true"}
 ``` python
 import numpy as np
 import matplotlib.pyplot as plt

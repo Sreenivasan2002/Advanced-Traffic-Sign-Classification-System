@@ -81,7 +81,7 @@ jupyter:
 
 -   **Data Source** -
     <https://www.kaggle.com/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign>
-:::
+
 
 
 # TASK #2: DATA VISUALIZATION
@@ -157,16 +157,9 @@ for i in np.arange(0, W_grid * L_grid): # create evenly spaces variables
 plt.subplots_adjust(hspace = 0.4)
 ```
 
-::: {.output .display_data}
-![](vertopal_945e9cd521f74c06ae4a4f5401532c16/a4ac4950942a1d1ddb9e1d5f510f36bb442f5426.png)
-:::
-:::
 
-::: {.cell .markdown}
 # TASK #3: IMPORT SAGEMAKER/BOTO3, CREATE A SESSION, DEFINE S3 AND ROLE
-:::
 
-::: {.cell .code execution_count="13"}
 ``` python
 # Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python
 # Boto3 allows Python developer to write software that makes use of services like Amazon S3 and Amazon EC2
@@ -188,25 +181,20 @@ role = sagemaker.get_execution_role()
 print(role)
 ```
 
-::: {.output .stream .stdout}
     arn:aws:iam::654654201105:role/service-role/AmazonSageMaker-ExecutionRole-20240606T025801
-:::
-:::
 
-::: {.cell .markdown}
+
 # TASK #4: UPLOAD THE DATA TO S3
-:::
 
-::: {.cell .code execution_count="14"}
+
 ``` python
 # Create directory to store the training and validation data
 
 import os
 os.makedirs("./data", exist_ok = True)
 ```
-:::
 
-::: {.cell .code execution_count="15"}
+
 ``` python
 # Save several arrays into a single file in uncompressed .npz format
 # Read more here: https://numpy.org/devdocs/reference/generated/numpy.savez.html
@@ -214,9 +202,7 @@ os.makedirs("./data", exist_ok = True)
 np.savez('./data/training', image = X_train, label = y_train)
 np.savez('./data/validation', image = X_test, label = y_test)
 ```
-:::
 
-::: {.cell .code execution_count="16"}
 ``` python
 # Upload the training and validation data to S3 bucket
 
